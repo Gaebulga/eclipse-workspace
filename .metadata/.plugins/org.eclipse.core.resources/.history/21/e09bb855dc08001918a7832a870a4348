@@ -1,0 +1,84 @@
+package Servlet;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import DAO.MemberDAO;
+import VO.Member;
+
+@WebServlet("/member")
+public class MemberServlet extends HttpServlet {
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		String action = req.getParameter("action");
+		
+		// 회원가입로직( controller ★★★★hidden을 이용한 방법★★★★)
+		if (action.equals("signUp")) {
+			
+			String id = req.getParameter("userId");
+			String pw = req.getParameter("userPw");
+			
+			// 
+			MemberDAO dao = new MemberDAO();
+			int result = dao.signUp(new Member(id, pw));
+			
+			// 회원가입 실패 시 (=0) index.jsp
+			if (result ==0) {
+				req.setAttribute("message", "회원가입에 실패했습니다(ID중복)");
+				resp.sendRedirect("index.jsp");
+			
+			// 회원가입 성공 시 (=1) login.jsp
+			} else {
+				resp.sendRedirect("login.jsp");
+				
+				
+			}
+			
+		// 로그인 메서드()	
+		} else if (action.equals("login")) {
+			
+			String id = req.getParameter("userId");
+			String pw = req.getParameter("userPw");
+			
+			
+			// 내꺼 문제가 뭘까?
+//			MemberDAO dao = new MemberDAO();
+//			
+//			Member member = new Member(id, pw);
+//			member = dao.login(member);
+//			
+//			if (member.getUserId().equals(req.getParameter("userId")) 
+//					&& member.getUserId().equals(req.getParameter("userPw")) ) {
+//				resp.sendRedirect("success.jsp");
+//			} else {
+//				resp.sendRedirect("login.jsp");
+//			}	
+			
+//			선생님방법
+			MemberDAO dao = new MemberDAO();
+			Member result = dao.login(new Member(id, pw));
+			
+			if (result == null) {
+				resp.sendRedirect("login.jsp");
+
+			} else {
+				resp.sendRedirect("success.jsp");
+
+			}
+		}
+	}
+	
+}

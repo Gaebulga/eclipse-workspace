@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 회원정보 처리 SQL -->
+<mapper namespace="">
+
+<!-- 회원 정보 저장 -->
+<insert id="insertPerson" parameterType="Person">
+
+</insert>
+
+<!-- 회원 목록 읽기 -->
+<select id="selectPerson" resultType="Person">
+
+</select>
+
+
+<!-- 저장 테스트 -->
+<insert id="insertTest" parameterType="test.jsp3.vo.Test">
+
+</insert>
+
+<!-- 읽기 테스트 -->
+<select id="selectTest" resultType="test.jsp3.vo.Test">
+
+</select>
+
+
+</mapper>

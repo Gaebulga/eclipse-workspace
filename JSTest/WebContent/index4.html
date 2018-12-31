@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script>
+	function check(){
+		
+		var id=document.getElementById("myId").value;
+		var pw=document.getElementById("myPw").value;
+		if (id=="") {
+			alert("ID값이 비어있습니다.");
+			return false;
+		} else if(pw=="") {
+			aleert("패스워드 값이 비어 있습니다.");
+			return false;
+		} else if(id.length<6||id.length>12){
+			alert("ID 글자길이 6~12자리로 입력하세요");
+			return false;
+		} else if(id.includes(" ")){	/* 띄워쓰기가 포함되어 있는지 확인 */
+			alert("ID에 '띄워쓰기'를 사용할 수 업습니다.");
+			return false;
+		}
+		
+		
+		
+		return true;
+	}
+</script>
+</head>
+<body>
+	<form action="signUp" onsubmit="return check();">
+		
+		ID:<input type="text" name="myId" id="myId"><br>
+		PW:<input type="password" name="myPw" id="myPw"><br>
+		<input type="submit" value="회원가입하기">
+	</form>
+	
+</body>
+</html>

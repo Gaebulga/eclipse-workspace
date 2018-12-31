@@ -1,0 +1,9 @@
+package DAO;
+
+import org.apache.ibatis.session.SqlSessionFactory;
+
+public class MemberDAO {
+	
+	private SqlSessionFactory fac = MybatisConfig.getSqlSessionFactory();
+	
+}

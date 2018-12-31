@@ -1,0 +1,20 @@
+package DAO;
+
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+
+import VO.Member;
+
+public class MemberDAO {
+	
+	private SqlSessionFactory fac = MybatisConfig.getSqlSessionFactory();
+	
+	//회원가입 메서드
+	// SqlSessionFactory을 통해서  SqlSession을 가져와서 사용한다.
+	public int signUp(Member mem) {
+		SqlSession session = fac.openSession();
+		
+		MemberMapper mapper = session.getMapper(MemberMapper.class);
+		
+	}
+}

@@ -1,0 +1,15 @@
+package DAO;
+
+import org.apache.ibatis.session.SqlSessionFactory;
+
+import VO.Member;
+
+public class MemberDAO {
+	
+	private SqlSessionFactory fac = MybatisConfig.getSqlSessionFactory();
+	
+	//회원가입 메서드
+	public int signUp(Member mem) {
+		
+	}
+}

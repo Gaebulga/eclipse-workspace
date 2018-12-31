@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>float 속성</title>
+	<style>
+		/* 
+		float : 띄우다
+		float : left | right;
+		
+		clear - float의 영향을 받지 않고 작용됨
+		clear: left | right | both;
+		*/
+		div{
+			width: 200px; height: 200px;
+			margin: 5px;
+		}
+		.red{
+			background-color: red;
+			float: left;
+		}
+		.green{
+			background-color: green;
+			float: left;
+		}
+		.blue{
+			background-color: blue;
+			clear: both;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="red"></div>
+	<div class="green"></div>
+	<div class="blue"></div>
+</body>
+</html>

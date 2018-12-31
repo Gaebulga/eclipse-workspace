@@ -1,0 +1,8 @@
+package DAO;
+
+public interface MemberMapper {
+	
+	public int signUp();
+	
+	public Member login();
+}

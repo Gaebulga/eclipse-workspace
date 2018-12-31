@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Reservation</title>
+
+</head>
+<body>
+	<caption>예약하기</caption>
+	<table>
+		<tr>
+			<td>성별</td>
+			<td>
+				<form>
+					<input type="radio" id="male" name="gender" checked="checked">
+					<label for="male">남성</label>
+					<input type="radio" id="female" name="gender">
+					<label for="female">여성</label>
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td>성함</td>
+			<td>
+				<form>
+					<textarea cols="250" rows="1"></textarea>
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td>연락처</td>
+			<td>
+				<form>
+					<textarea cols="250" rows="1"></textarea>
+					</td>
+				</form>
+		</tr>
+		<tr>
+			<td>전달 메세지</td>
+			<td><textarea cols="250" rows="1"></textarea></td>
+		</tr>
+	</table>
+
+
+</body>
+</html>

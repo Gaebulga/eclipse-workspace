@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Position</title>
+	<style>
+		/* 
+		Position 속성
+		1. 정적 포지셔닝 (static position) - 기본값, 사용안함
+		2. 상대 포지셔닝 (relative position) - 상위 요소(여기선 div에 따라감)에 따라 자리 배치
+		3. 절대 포지셔닝 (absolute position) - body 안에서 움직이므로 스크롤을 내릴 경우 사라짐
+		4. 절대 포지셔닝 - 화면기준 (fixed position) - body 안에 있는건은 absolute와 같지만  ***스크롤을 내리면 따라옴***
+		 */
+		 #wrap{
+		 	width: 500px; 
+		 	margin: 0 auto; 
+		 	background-color: powderblue;
+		 }
+		 p{
+		 	border: 1px solid black;
+		 }
+		 .po{
+		 	color: hotpink;
+		 	font-size: 1.2em;
+		 	font-weight: bold;
+		 	font-style: inherit;
+		 	
+		 	position: fixed;
+		 	top: 20px; left: 20px;
+		 }
+	</style>
+
+</head>
+<body>
+	<div id="wrap">
+		<p>첫 번째 문장입니다</p>
+		<p>두 번째 문장입니다</p>
+		<p class="po">세 번째 문장입니다</p>
+		<p>네 번째 문장입니다</p>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+package DAO;
+
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+
+import VO.Member;
+
+public class MemberDAO {
+	
+	private SqlSessionFactory fac = MybatisConfig.getSqlSessionFactory();
+	
+	public signUp(Member mem) {
+		SqlSession session = fac.openSession();
+		
+		MemberMapper mapper = session.getMapper(MemberMapper.class);
+	}
+}

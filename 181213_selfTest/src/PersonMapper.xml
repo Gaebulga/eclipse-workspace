@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 회원정보 처리 SQL -->
+<mapper namespace="test.DAO.PersonMapper">
+
+	<!-- 회원정보 저장 -->
+	<!-- 인터페이스에서 id로 sql문 전체를 구별함 -->
+	<insert id="insertPerson" parameterType="Person">
+		insert into OOO(입력할 테이블명) (
+			id,
+			name,
+		 	phone
+		values(	
+			#{id},
+			#{name},
+		 	#{phone}
+		 	)
+	</insert>
+	
+	<select id="selectPerson" resultType="">
+		select 
+			*
+		from
+			OOO
+		order by num
+			
+		
+	</select>
+	</mapper>

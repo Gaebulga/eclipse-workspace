@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 회원정보 처리 SQL -->
+<mapper namespace="DAO.MemberMapper">
+	
+	<!-- id,pw 둘다 파라미터로 받기 위해서 member객체를 받을 것인데 mybatis-config에 alias와 맞췃다 -->
+	<insert id="signUp" parameterType="member">
+		INSERT INTO MEMBERINFO(
+			USERID, USERPW)
+		VALUES(
+			#{userId}, #{userPw})
+	
+	</insert> 
+	
+	
+	<select id="login" parameterType="member" resultType="member">
+		SELECT 
+			USERID, USERPW
+		FROM
+			MEMBERINFO
+		WHERE
+			USERID=#{userId}
+		AND
+			USERPW=#{userPw}
+		
+	</select>
+	
+	<!-- typeAlias에 등록을 안했던 경우에는 VO.Xxx같은 상위 폴더도 함꼐 써야한다. -->
+	<insert id="insertBoard" parameterType="VO.Board">
+		INSERT INTO MEMBERBOARD(
+			USERID,
+			MESSAGE
+		)
+		VALUES (
+			#{userId},
+			#{message}
+		)
+		
+	</insert>
+
+	<select id="selectBoard" resultType="VO.Board">
+		SELECT
+			USERID,
+			MESSAGE
+		FROM
+			MEMBERBOARD
+			
+	</select>
+
+</mapper>

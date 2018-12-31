@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+ <!-- 1) namespace 부분을 알맞게 채울 것 -->
+<mapper namespace="">
+	<select id="selectOne" resultType="Member">
+		<!-- 2) SCIT_MEMBER 테이블로부터 관리자의 이메일과 패스워드가 같은 데이터를 조회하는 쿼리 완성 -->
+			select
+				*
+			from
+				scit_member
+			where
+				email = #{email}
+			and
+				password = #{password}
+	</select>
+</mapper>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>float 속성 이미지에 적용하기</title>
+	<style>
+		
+	</style>
+</head>
+<body>
+	<div class="aa"></div>
+	<div class="bb"></div>
+	<div class="cc"></div>
+	
+</body>
+</html>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="global.sesoc.dao.SurveyMapper"> 
+
+	<insert id="insertSurvey" parameterType="map">
+		INSERT INTO SCIT_SURVEY (
+			survey_id, 
+			title, 
+			startdate, 
+			enddate)
+		VALUES (
+			SEQ_SURVEY.nextval, 
+			#{title}, 
+			sysdate
+			<if test="term==1">
+				, sysdate + 1
+			</if>
+			<if test="term==2">
+				, sysdate + 7
+			</if>
+			<if test="term==3">
+				, sysdate + 15
+			</if>
+			<if test="term==4">
+				, sysdate + 30
+			</if>
+			<if test="term==5">
+				, add_months(sysdate, 1)
+			</if>						
+		)
+	</insert>
+	
+	<!-- 1) 가상 테이블로부터 현재 SEQ_SURVEY시퀀스 객체의 현재 번호 질의 -->
+	<select id="selectSurveyId" resultType="int">
+		<!-- Code Here -->
+		SELECT
+			SEQ_SURVEY.currval
+		FROM 
+            DUAL
+	</select>
+	
+	<!-- 2) 질문 등록 쿼리 : insertQuestion-->
+	<!-- Code Here -->
+		
+	<insert id="insertQuestion" parameterType="Question">
+		INSERT INTO SCIT_QUESTION (
+			QUESTION_ID, 
+			SURVEY_ID, 
+			QUESTION, 
+			ANSWER1,
+			ANSWER2,
+			ANSWER3,
+			ANSWER4,
+			ANSWER5
+			)
+		VALUES (
+			SEQ_QUESTION.NEXTVAL, 
+            #{SURVEY_ID},
+			#{QUESTION}, 
+			#{ANSWER1},
+			#{ANSWER2},
+			#{ANSWER3},
+			#{ANSWER4},
+			#{ANSWER5}						
+		)
+	</insert>
+	
+	
+	
+	<!-- 3) 오늘의 날짜가 enddate가 지나지 않은 설문 목록을 가져오는 쿼리 viewSurveyList
+		    조사 시작일을 기준으로 오름차순 정렬하여 질의해야한다.
+		    조사 종료일이 오늘 날짜를 지난 경우 출력되지 않아야 한다.  -->
+		    
+	<!-- Code Here -->
+		<select id="viewSurveyList" resultType="Survey" >
+			SELECT 
+				*
+			FROM
+				SCIT_SURVEY
+			WHERE
+				ENDDATE <= ROUND(SYSDATE)
+			ORDER BY STARTDATE
+		</select> 
+	 
+
+
+	<!-- enddate가 지나지 않은 survey목록을 질의. 조사 시작일을 기준으로 오름차순으로 정렬한다. -->
+		<!-- 4) Code here -->
+		
+		
+		
+	
+	<!-- 5) 특정 survey_id의 질문에 대한 목록을 조회한다. 이때 question_id와 survey_id 순으로 정렬하여 조회  -->
+	<select id="viewQuestion" resultType="Question" parameterType="int">
+		<!-- code here -->
+		SELECT
+			QUESTION
+		FROM
+			SCIT_QUESTION
+		WHERE
+			survey_id = #{survey_id}
+		ORDER BY QUESTION_ID, SURVEY_ID
+
+	</select>
+	
+	<!-- 같은 사용자가 같은 설문에 참여한 적 있는지 확인하는 쿼리 : 중복되지 않은 이메일만 조회한다. -->
+	<select id="checkAnswer" parameterType="map" resultType="Answer">
+		SELECT 
+			DISTINCT email 
+		FROM 
+			scit_answer
+		WHERE
+			survey_id = #{survey_id}
+		AND
+			email = #{email}
+	</select>
+
+	<!-- 사용자가 설문에 대한 답변을 한 경우 그 대답을 저장하는 쿼리 : insertAnswer -->
+	<insert id="insertAnswer" parameterType="map">
+		<!-- 6) Code Here -->
+		
+		
+		
+		
+		
+		
+		
+	</insert>
+	
+	<!-- 설문에 참여한 인원수를 알아오는 쿼리, 내부의 서브쿼리부분을 완성할 것. 중복을 제거해야 한다.-->
+	<select id="countAnswer" parameterType="int" resultType="int">
+		    <!-- 7)  Code Here -->
+		SELECT 
+			count(*) 
+		FROM (
+			
+		    	
+		)	
+	</select>
+
+	<select id="statSurvey" parameterType="int" resultType="StatSurvey">
+		SELECT
+			survey_id
+			, question_id
+			, question
+			, answer1
+			, (SELECT count(answer) FROM scit_answer WHERE survey_id = #{survey_id} AND question_id = scit_question.question_id AND answer = 1) cnt1
+			, answer2
+			, (SELECT count(answer) FROM scit_answer WHERE survey_id = #{survey_id} AND question_id = scit_question.question_id AND answer = 2) cnt2
+			, answer3
+			, (SELECT count(answer) FROM scit_answer WHERE survey_id = #{survey_id} AND question_id = scit_question.question_id AND answer = 3) cnt3
+			, answer4
+			, (SELECT count(answer) FROM scit_answer WHERE survey_id = #{survey_id} AND question_id = scit_question.question_id AND answer = 4) cnt4
+			, answer5
+			, (SELECT count(answer) FROM scit_answer WHERE survey_id = #{survey_id} AND question_id = scit_question.question_id AND answer = 5) cnt5
+		FROM 
+			scit_question
+		WHERE
+			survey_id = #{survey_id}
+			
+	</select>
+</mapper>

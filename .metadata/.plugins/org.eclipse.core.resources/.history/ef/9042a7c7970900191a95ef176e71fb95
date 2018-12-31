@@ -1,0 +1,68 @@
+package DAO;
+
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+
+import VO.Board;
+import VO.Member;
+
+public class MemberDAO {
+	
+	private SqlSessionFactory fac = MybatisConfig.getSqlSessionFactory();
+	
+	//회원가입 메서드
+	// SqlSessionFactory을 통해서  SqlSession을 가져와서 사용한다.
+	public int signUp(Member mem) {
+		SqlSession session = fac.openSession();
+		
+		// 껍데기는 interface지만 속은 XML로 채워주는.
+		MemberMapper mapper = session.getMapper(MemberMapper.class);
+		
+		int result = 0;
+		
+		// 이 부분에서 에러가 생길 수 있기 때문에 try / catch를 사용
+		try {
+			result = mapper.signUp(mem);
+			session.commit();
+		} catch (Exception e) {
+			return result;
+		} finally {
+			session.close();
+		}
+		
+		return result;
+	}
+	
+	// 로그인 메서드
+	public Member login(Member mem) {
+		SqlSession session = fac.openSession();
+		
+		// MemberMapper 인터페이스를 객체화 시킴
+		MemberMapper mapper = session.getMapper(MemberMapper.class);
+	
+		Member m = null;
+		try {
+			// DB에다가 mem넘겨줘서 확인
+			m = mapper.login(mem);
+			session.commit();
+		} catch (Exception e) {
+			return null;
+		} finally {
+			session.close();
+		}
+		return m;
+	}
+	
+	public void insertBoard(Board board) {
+		SqlSession session = fac.openSession();
+		MemberMapper mapper = session.getMapper(MemberMapper.class);
+		
+		try {
+			mapper.insertBoard(board);
+		} catch (Exception e) {
+
+		} finally {
+			session.commit();
+		}
+	}
+}

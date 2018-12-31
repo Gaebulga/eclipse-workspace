@@ -1,0 +1,153 @@
+
+12월 10, 2018 13:07:05.44 NEW SESSION
+12월 10, 2018 13:07:05.44 [14160:6976:1210/130705.447:ERROR:connection_factory_impl.cc(400)] Failed to connect to MCS endpoint with error -106
+12월 10, 2018 13:07:28.64 [14160:6976:1210/130728.642:ERROR:connection_factory_impl.cc(400)] Failed to connect to MCS endpoint with error -106
+12월 10, 2018 13:07:40.02 [14160:228:1210/130740.021:ERROR:account_tracker.cc(242)] AccessTokenFetched error: Connection failed (-106).
+12월 10, 2018 13:08:14.77 [14160:6976:1210/130814.776:ERROR:connection_factory_impl.cc(400)] Failed to connect to MCS endpoint with error -106
+12월 10, 2018 13:09:57.61 [14160:6976:1210/130957.618:ERROR:connection_factory_impl.cc(400)] Failed to connect to MCS endpoint with error -106
+12월 10, 2018 13:12:59.68 [14160:6976:1210/131259.687:ERROR:connection_factory_impl.cc(400)] Failed to connect to MCS endpoint with error -21
+12월 10, 2018 13:13:03.67 [14160:6976:1210/131303.671:ERROR:connection_factory_impl.cc(400)] Failed to connect to MCS endpoint with error -21
+12월 10, 2018 13:13:07.68 [14160:6976:1210/131307.680:ERROR:connection_factory_impl.cc(400)] Failed to connect to MCS endpoint with error -21
+12월 10, 2018 13:13:12.13 [14160:6976:1210/131312.133:ERROR:socket_stream.cc(219)] Closing stream with result -2
+12월 10, 2018 13:13:15.68 [14160:6976:1210/131315.681:ERROR:connection_factory_impl.cc(400)] Failed to connect to MCS endpoint with error -21
+12월 10, 2018 13:26:14.20 [14160:228:1210/132614.208:ERROR:CONSOLE(6)] "Uncaught ReferenceError: gbar is not defined", source: https://clients5.google.com/pagead/drt/dn/ (6)
+12월 10, 2018 13:36:25.18 [14160:228:1210/133625.185:ERROR:CONSOLE(6)] "Uncaught ReferenceError: gbar is not defined", source: https://clients5.google.com/pagead/drt/dn/ (6)
+12월 10, 2018 13:55:25.91 [14160:6976:1210/135525.917:ERROR:socket_stream.cc(219)] Closing stream with result -2
+12월 10, 2018 13:55:25.98 [14160:6976:1210/135525.988:ERROR:connection_factory_impl.cc(400)] Failed to connect to MCS endpoint with error -21
+12월 10, 2018 14:00:42.52 [14160:6976:1210/140042.523:ERROR:connection_factory_impl.cc(400)] Failed to connect to MCS endpoint with error -106
+12월 10, 2018 14:00:56.18 [14160:6976:1210/140056.181:ERROR:connection_factory_impl.cc(400)] Failed to connect to MCS endpoint with error -21
+12월 10, 2018 14:24:28.78 [14160:6976:1210/142428.789:ERROR:extension_protocols.cc(565)] Allowing load of chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/include.preload.js.mapfrom unknown origin. Could not find user data for request.
+12월 10, 2018 14:24:28.79 [14160:6976:1210/142428.792:ERROR:extension_protocols.cc(565)] Allowing load of chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/include.postload.js.mapfrom unknown origin. Could not find user data for request.
+12월 10, 2018 14:52:02.60 [14160:6976:1210/145202.608:ERROR:socket_stream.cc(219)] Closing stream with result -2
+12월 10, 2018 14:52:02.73 [14160:6976:1210/145202.730:ERROR:connection_factory_impl.cc(400)] Failed to connect to MCS endpoint with error -21
+12월 10, 2018 15:01:16.59 [14160:6976:1210/150116.595:ERROR:connection_factory_impl.cc(400)] Failed to connect to MCS endpoint with error -106
+12월 10, 2018 15:01:24.67 [14160:6976:1210/150124.675:ERROR:connection_factory_impl.cc(400)] Failed to connect to MCS endpoint with error -21
+12월 10, 2018 15:04:08.18 [14160:228:1210/150408.185:ERROR:CONSOLE(6)] "Uncaught ReferenceError: gbar is not defined", source: https://clients5.google.com/pagead/drt/dn/ (6)
+12월 10, 2018 16:01:59.00 [14160:6976:1210/160159.003:ERROR:socket_stream.cc(219)] Closing stream with result -2
+12월 10, 2018 16:01:59.09 [14160:6976:1210/160159.090:ERROR:connection_factory_impl.cc(400)] Failed to connect to MCS endpoint with error -21
+12월 10, 2018 16:03:42.43 [14160:6976:1210/160342.436:ERROR:connection_factory_impl.cc(400)] Failed to connect to MCS endpoint with error -21
+12월 10, 2018 16:03:45.77 [14160:6976:1210/160345.777:ERROR:connection_factory_impl.cc(400)] Failed to connect to MCS endpoint with error -106
+12월 10, 2018 16:03:53.67 [14160:6976:1210/160353.678:ERROR:connection_factory_impl.cc(400)] Failed to connect to MCS endpoint with error -21
+12월 10, 2018 16:10:53.41 [14160:228:1210/161053.415:ERROR:textfield.cc(1767)] NOT IMPLEMENTED
+12월 10, 2018 16:11:39.76 [14160:228:1210/161139.759:ERROR:CONSOLE(6)] "Uncaught ReferenceError: gbar is not defined", source: https://clients5.google.com/pagead/drt/dn/ (6)
+12월 10, 2018 16:14:37.52 [14160:228:1210/161437.521:ERROR:prefix_selector.cc(163)] NOT IMPLEMENTED
+12월 10, 2018 16:17:42.94 [14160:228:1210/161742.944:ERROR:CONSOLE(6)] "Uncaught ReferenceError: gbar is not defined", source: https://clients5.google.com/pagead/drt/dn/ (6)
+12월 10, 2018 16:18:28.76 [14160:6976:1210/161828.768:ERROR:socket_stream.cc(219)] Closing stream with result -2
+12월 10, 2018 16:30:50.04 [14160:228:1210/163050.040:ERROR:gcm_channel_status_request.cc(151)] GCM channel request failed.
+12월 10, 2018 16:30:53.02 [14160:6976:1210/163050.401:ERROR:connection_factory_impl.cc(400)] Failed to connect to MCS endpoint with error -21
+12월 10, 2018 16:30:53.19 [14160:6976:1210/163053.196:ERROR:connection_factory_impl.cc(400)] Failed to connect to MCS endpoint with error -21
+12월 10, 2018 16:31:02.17 [14160:6976:1210/163102.173:ERROR:connection_factory_impl.cc(400)] Failed to connect to MCS endpoint with error -21
+12월 10, 2018 18:20:30.02 [14160:6976:1210/182030.028:ERROR:socket_stream.cc(219)] Closing stream with result -2
+12월 10, 2018 18:20:30.15 [14160:6976:1210/182030.151:ERROR:connection_factory_impl.cc(400)] Failed to connect to MCS endpoint with error -21
+12월 10, 2018 20:39:53.59 [14160:228:1210/203953.590:ERROR:gcm_channel_status_request.cc(151)] GCM channel request failed.
+12월 10, 2018 20:39:56.09 [14160:6976:1210/203953.625:ERROR:connection_factory_impl.cc(400)] Failed to connect to MCS endpoint with error -106
+12월 10, 2018 20:41:32.81 [14160:228:1210/204132.817:ERROR:http_bridge.cc(126)] NOT IMPLEMENTED
+12월 10, 2018 20:41:33.09 
+12월 10, 2018 20:41:33.09 KLIB_SelfTest return : KLR_OK
+
+12월 11, 2018 13:06:34.34 NEW SESSION
+12월 11, 2018 13:06:34.34 [1336:9136:1211/130634.301:ERROR:CONSOLE(6)] "Uncaught ReferenceError: gbar is not defined", source: https://clients5.google.com/pagead/drt/dn/ (6)
+12월 11, 2018 16:09:24.22 [1336:9136:1211/160924.224:ERROR:render_widget_host_view_aura.cc(1349)] NOT IMPLEMENTED
+12월 11, 2018 16:09:24.22 [1336:9136:1211/160924.224:ERROR:render_widget_host_view_aura.cc(1349)] NOT IMPLEMENTED
+12월 11, 2018 16:24:44.75 [1336:12772:1211/162444.757:ERROR:socket_stream.cc(219)] Closing stream with result -2
+12월 11, 2018 16:24:44.88 [1336:12772:1211/162444.888:ERROR:connection_factory_impl.cc(400)] Failed to connect to MCS endpoint with error -105
+12월 11, 2018 18:02:36.61 [1336:9136:1211/180236.611:ERROR:gcm_channel_status_request.cc(151)] GCM channel request failed.
+12월 11, 2018 18:02:40.00 [1336:11380:1211/180236.612:ERROR:get_updates_processor.cc(242)] PostClientToServerMessage() failed during GetUpdates
+12월 11, 2018 18:02:40.00 [1336:12772:1211/180237.613:ERROR:connection_factory_impl.cc(400)] Failed to connect to MCS endpoint with error -106
+12월 11, 2018 18:02:51.68 [1336:11380:1211/180251.682:ERROR:get_updates_processor.cc(242)] PostClientToServerMessage() failed during GetUpdates
+12월 11, 2018 18:02:51.68 [1336:12772:1211/180251.682:ERROR:connection_factory_impl.cc(400)] Failed to connect to MCS endpoint with error -21
+12월 11, 2018 18:03:15.65 [1336:9136:1211/180315.656:ERROR:CONSOLE(6)] "Uncaught ReferenceError: gbar is not defined", source: https://clients5.google.com/pagead/drt/dn/ (6)
+
+12월 13, 2018 13:13:28.31 NEW SESSION
+12월 13, 2018 13:13:28.31 [14572:9912:1213/131328.311:ERROR:http_bridge.cc(126)] NOT IMPLEMENTED
+12월 13, 2018 13:13:28.44 
+12월 13, 2018 13:13:28.44 KLIB_SelfTest return : KLR_OK
+12월 13, 2018 13:13:37.55 [15632:7276:1213/131337.552:ERROR:http_bridge.cc(126)] NOT IMPLEMENTED
+12월 13, 2018 13:13:37.76 
+12월 13, 2018 13:13:37.76 KLIB_SelfTest return : KLR_OK
+12월 13, 2018 13:15:20.11 [15232:13804:1213/131520.112:ERROR:http_bridge.cc(126)] NOT IMPLEMENTED
+12월 13, 2018 13:15:20.23 
+12월 13, 2018 13:15:20.23 KLIB_SelfTest return : KLR_OK
+12월 13, 2018 13:17:03.20 [14804:10340:1213/131703.207:ERROR:http_bridge.cc(126)] NOT IMPLEMENTED
+12월 13, 2018 13:17:03.32 
+12월 13, 2018 13:17:03.32 KLIB_SelfTest return : KLR_OK
+
+12월 13, 2018 13:30:32.83 NEW SESSION
+12월 13, 2018 13:30:32.83 [16124:13784:1213/133032.831:ERROR:http_bridge.cc(126)] NOT IMPLEMENTED
+12월 13, 2018 13:30:32.95 
+12월 13, 2018 13:30:32.95 KLIB_SelfTest return : KLR_OK
+12월 13, 2018 15:17:59.41 [15220:16184:1213/151759.418:ERROR:ssl_client_socket_impl.cc(1061)] handshake failed; returned -1, SSL error code 1, net_error -101
+12월 13, 2018 15:18:00.10 [15220:16184:1213/151800.102:ERROR:ssl_client_socket_impl.cc(1061)] handshake failed; returned -1, SSL error code 1, net_error -101
+12월 13, 2018 16:13:32.50 [15220:16184:1213/161332.501:ERROR:socket_stream.cc(219)] Closing stream with result -2
+12월 13, 2018 16:13:32.62 [15220:16184:1213/161332.627:ERROR:connection_factory_impl.cc(400)] Failed to connect to MCS endpoint with error -21
+12월 13, 2018 16:43:43.55 [15220:13388:1213/164343.550:ERROR:get_updates_processor.cc(242)] PostClientToServerMessage() failed during GetUpdates
+12월 13, 2018 16:43:44.46 [15220:16184:1213/164344.467:ERROR:connection_factory_impl.cc(400)] Failed to connect to MCS endpoint with error -106
+
+12월 20, 2018 08:49:46.75 NEW SESSION
+12월 20, 2018 08:49:46.75 [14504:7340:1220/084946.754:ERROR:textfield.cc(1777)] NOT IMPLEMENTED
+12월 20, 2018 08:51:16.09 [14504:7340:1220/085116.099:ERROR:http_bridge.cc(126)] NOT IMPLEMENTED
+
+12월 20, 2018 19:25:10.56 NEW SESSION
+12월 20, 2018 19:25:10.56 [6876:13784:1220/192510.563:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.56 [6876:13784:1220/192510.563:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.56 [6876:13784:1220/192510.563:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.56 [6876:13784:1220/192510.563:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.56 [6876:13784:1220/192510.563:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.57 [6876:13784:1220/192510.563:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.57 [6876:13784:1220/192510.564:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.57 [6876:13784:1220/192510.564:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.57 [6876:13784:1220/192510.564:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.57 [6876:13784:1220/192510.564:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.57 [6876:13784:1220/192510.564:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.57 [6876:13784:1220/192510.564:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.57 [6876:13784:1220/192510.564:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.57 [6876:13784:1220/192510.564:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.57 [6876:13784:1220/192510.564:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.57 [6876:13784:1220/192510.564:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.57 [6876:13784:1220/192510.564:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.57 [6876:13784:1220/192510.564:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.57 [6876:13784:1220/192510.564:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.57 [6876:13784:1220/192510.564:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.57 [6876:13784:1220/192510.564:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.57 [6876:13784:1220/192510.564:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.57 [6876:13784:1220/192510.564:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.57 [6876:13784:1220/192510.564:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.57 [6876:13784:1220/192510.564:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.57 [6876:13784:1220/192510.564:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.57 [6876:13784:1220/192510.564:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.57 [6876:13784:1220/192510.564:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.60 [6876:13784:1220/192510.582:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.60 [6876:13784:1220/192510.582:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.60 [6876:13784:1220/192510.582:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.60 [6876:13784:1220/192510.582:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.60 [6876:13784:1220/192510.582:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.60 [6876:13784:1220/192510.582:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.60 [6876:13784:1220/192510.582:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.60 [6876:13784:1220/192510.582:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.60 [6876:13784:1220/192510.582:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.60 [6876:13784:1220/192510.582:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.60 [6876:13784:1220/192510.582:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.60 [6876:13784:1220/192510.582:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.60 [6876:13784:1220/192510.582:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.60 [6876:13784:1220/192510.582:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.60 [6876:13784:1220/192510.582:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.60 [6876:13784:1220/192510.582:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.60 [6876:13784:1220/192510.582:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.60 [6876:13784:1220/192510.582:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.60 [6876:13784:1220/192510.582:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:25:10.60 [6876:13784:1220/192510.582:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 20, 2018 19:46:35.50 [6876:5132:1220/194635.500:ERROR:socket_stream.cc(219)] Closing stream with result -2
+12월 20, 2018 19:46:35.63 [6876:5132:1220/194635.630:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -21
+12월 20, 2018 20:01:18.38 [6876:5132:1220/200118.380:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -106
+12월 20, 2018 20:01:30.67 [6876:5132:1220/200130.678:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -21
+12월 20, 2018 21:37:57.51 [6876:5132:1220/213757.513:ERROR:socket_stream.cc(219)] Closing stream with result -2
+12월 20, 2018 21:37:57.64 [6876:5132:1220/213757.642:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -21
+12월 20, 2018 22:06:53.00 [6876:3500:1220/220653.001:ERROR:get_updates_processor.cc(242)] PostClientToServerMessage() failed during GetUpdates
+12월 20, 2018 22:06:55.99 [6876:5132:1220/220653.451:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -106
+12월 20, 2018 22:36:47.47 [6876:5132:1220/223647.470:ERROR:socket_stream.cc(219)] Closing stream with result -2
+12월 20, 2018 22:37:25.67 [6876:5132:1220/223725.674:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -106
+12월 20, 2018 22:37:49.37 [6876:5132:1220/223749.377:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -106
+12월 20, 2018 22:38:47.53 [6876:5132:1220/223847.531:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -106
+12월 20, 2018 22:40:20.52 [6876:5132:1220/224020.527:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -106
+12월 20, 2018 22:41:34.08 [6876:3500:1220/224134.083:ERROR:get_updates_processor.cc(242)] PostClientToServerMessage() failed during GetUpdates
+12월 20, 2018 22:42:19.08 [6876:3500:1220/224219.086:ERROR:get_updates_processor.cc(242)] PostClientToServerMessage() failed during GetUpdates

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Reservation</title>
+	<style>
+		p{
+			font-weight: bold;
+		}
+		input[type="submit"]{
+			color: white;
+			background-color: skyblue;
+		}
+		input[type="reset"]{
+			color: white;
+			background-color: skyblue;
+			width: 10;
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<caption><p>예약하기</p></caption>
+	<table>
+		<tr>
+			<td>성별</td>
+			<td>
+				<form>
+					<input type="radio" id="male" name="gender" checked="checked">
+					<label for="male">남성</label>
+					<input type="radio" id="female" name="gender">
+					<label for="female">여성</label>
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td>성함</td>
+			<td>
+				<form>
+					<textarea cols="25" rows="1"></textarea>
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td>연락처</td>
+			<td>
+				<form>
+					<textarea cols="25" rows="1"></textarea>
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td>전달 메세지</td>
+			<td>
+				<form>
+					<textarea cols="30" rows="5"></textarea>
+				</form>
+			</td>
+		</tr>
+	</table>
+	<form>
+		<input type="submit" value="예약하기"> 
+		<input type="reset" value="다시작성">
+	</form>
+
+</body>
+</html>

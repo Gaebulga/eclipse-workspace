@@ -1,0 +1,6 @@
+package VO;
+
+public class Member {
+	private String userId;
+	private String userPw;
+}

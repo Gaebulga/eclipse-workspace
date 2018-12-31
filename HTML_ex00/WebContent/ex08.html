@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>선택자의 우선순위</title>
+	<style>
+		.a1 {
+			width: 1000px;
+			background-color:hotpink;
+			border: 2px solid black;
+			
+			/* 라인의 굵기, 라인의 스타일, 라인의 색상 */
+			/* border-top, bottom, right, left */	
+		}
+		#text{
+			color: blue;
+		}
+		.b2{
+			color : white;
+		}
+		.c3{
+			background-color:red;	
+		}
+	</style>
+</head>
+<body>
+	<!--  
+		1. 선택자의 우선순위
+			* 선택자   태그선택자 < 클래스 선택자 < 아이디 선택자		
+			[아이디 선택자가 가장 강하므로, 다른 선택자와 함께 선언 될 경우 아이디 선택자가 2김]
+	
+			클래스(.)아이디(#)의 네이밍 방법
+			- 내 마음대로!
+			- 영 소문자로 시작
+			- 영 대소문자와 숫자 _, - 특수기호와 조합하여 사용
+			- 한글, 공백, 속석명, 태그명 사용 X
+	 -->
+	 <h1>선택자</h1>
+	 <div class="a1">
+	 	<p>1 번째 문단 영역입니다.</p>
+	 	<p>2 번째 문단 영역입니다.</p>
+	 	<p id="text">3 번째 문단 영역입니다.</p>
+	 	<p>4 번째 문단 영역입니다.</p>
+	 	<p>5 번째 문단 영역입니다.</p>
+	 </div>
+	 <div class="c3">
+	 	<p>첫 번째 문단 영역입니다.</p>
+	 	<p>두 번째 문단 영역입니다.</p>
+	 	<p class="b2" >세 번째 문단 영역입니다.</p>
+	 	<p>네 번째 문단 영역입니다.</p>
+	 	<p>다섯 번째 문단 영역입니다.</p>
+	 </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>게시물 페이지</title>
+</head>
+<body>
+	<h1>AWESOME BOARD</h1>
+
+	<!-- 하나의 서블릿이 처리하기때문에 member로 한다. -->
+	<form action="member" method="post">
+		<input type="hidden" name="action" value="insertBoard">
+		Message:<input type="text" name="message"><br>
+		<button>메세지 전송</button>
+
+	</form>
+	<!-- 자바의 foreach 에서는  왼쪽에  구성요소 하나 : 오른쪽엔 리스트 형태 하나 -->
+	<!-- var는 변수명이라서  아무거나 써도됨 // 받아온 arrayList를 items에 -->
+	<!-- arraaList의 크기 만큼 자동반복 -->
+	<table>
+		<c:forEach var="board" items="${requestScope.boardList}">
+			<!-- 여기서 board는  var의 "board"와 맞춰준 것 -->
+		
+			<tr><td>${board.userId}</td> <td>${board.message}</td></tr>
+
+		</c:forEach>
+	</table>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+package memberServlet;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import DAO.MemberDAO;
+
+@WebServlet("/member")
+public class MemberServlet extends HttpServlet{
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		String action = req.getParameter("action");
+		
+		if (action.equals("signUp")) {
+			String id = req.getParameter("userId");
+			String pw = req.getParameter("userPw");
+			
+			MemberDAO dao = new MemberDAO();
+			
+			dao.signUp(new Member(id, pw));
+			
+		} else {
+			
+			
+		}
+		
+	}
+	
+}

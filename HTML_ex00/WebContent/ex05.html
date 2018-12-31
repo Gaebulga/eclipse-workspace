@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Table 을 만들어 보자</title>
+</head>
+<body>
+
+<!-- 
+		table	전체태그
+		tr		열(세로)
+		td		행(가로) - 데이터 셀
+		th		행(가로) - 제목 셀
+		
+		테이블 외곽선을 나타내는 border 속성
+		
+		colspan : 가로 병합시
+		rowspan : 세로 병합시
+ -->
+ 
+ 	<table border="1"><!-- 헷갈리기 때문에 연습 많이 해봐야 합니다 -->
+ 		<tr>
+ 			<td>1x1</td>
+ 			<td>1x2</td>
+ 			<td>1x3</td>
+ 		</tr>
+ 		<tr>
+ 			<td>2x1</td>
+ 			<td>2x2</td>
+ 			<td>2x3</td>
+ 		</tr>
+ 		<tr>
+ 			<td>3x1</td>
+ 			<td>3x2</td>
+ 			<td>3x3</td>
+ 		</tr>
+ 	</table>
+ 
+ 	<table border="1"><!-- 헷갈리기 때문에 연습 많이 해봐야 합니다 -->
+ 		<tr>
+ 			<td>1x1</td>
+ 			<td colspan="2">1x2, 1x3</td>
+ 		</tr>
+ 		<tr>
+ 			<td>2x1</td>
+ 			<td>2x2</td>
+ 			<td rowspan="2">2x3, 3x3</td>
+ 		</tr>
+ 		<tr>
+ 			<td>3x1</td>
+ 			<td>3x2</td>
+ 		</tr>
+ 	</table>
+ 	
+ 	<br></br>
+ 	
+ 	<table border="2">
+ 		<tr>
+ 			<th>알파벳</th>
+ 			<th>숫자</th>
+ 		</tr>
+ 		<tr>
+			<td>AA</td>
+			<td>222</td>
+ 		</tr>
+ 		<tr>
+			<td>B</td>
+			<td>222</td>
+ 		</tr>
+ 	</table>
+	
+	<br>
+	<br>
+	
+	<table border="3">
+		<tr>
+			<th>숫자</th>
+			<th colspan="2">알파벳 합체</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>a</td>
+			<td>A</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>b</td>
+			<td>B</td>
+		</tr>
+	</table>
+	
+	<br>
+	
+	<table border="1">
+	<caption>회원 정보</caption>	
+		<tr>
+			<td>이름</td>
+			<td>나이</td>
+		</tr>
+		<tr>
+			<td>홍길동</td>
+			<td>27</td>
+		</tr>
+	</table>
+	
+	 
+</body>
+</html>

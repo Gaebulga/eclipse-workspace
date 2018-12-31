@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 인터페이스 네임스페이스 -->
+	
+	<!-- 등록 -->
+	<insert id="insert" parameterType="Account">
+	insert into account (
+		`
+	)
+	values(
+		
+	) 
+	
+	<!-- 수정 -->
+	
+	<!-- 삭제 -->
+	
+	<!-- no검색 -->
+	<select id="fingByNo" resultType="Account">
+	select 
+		
+	from
+		
+	where
+		
+	<!-- 전체검색 -->
+	

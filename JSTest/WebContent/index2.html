@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML의 다른 요소에 접근하는 법</title>
+<script>
+
+	function inputDiv(){
+		var content=document.getElementById("myText").value;
+		
+		document.getElementById("myDiv").innerHTML=content;
+	}
+
+</script>
+</head>
+<body>
+	<div id="myDiv" style="height:100px; width:300px;"></div>
+	댓글 : <input type="text" id="myText" onKeyup="inputDiv()">
+	<!-- onKeyup  키보드 어떤 버튼을 적고 떼자마자 발동 -->
+
+
+</body>
+</html>

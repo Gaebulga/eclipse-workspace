@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Practice</title>
+<script>
+	function check(){
+		var id=document.getElementById("myId").value;
+		var pw=document.getElementById("myPw").value;
+		var email=document.getElementById("myEmail").value;
+		var phone=document.getElementById("myPhone").value;
+		
+		if (id=="") {
+			alert("ID를 입력하세요");
+			return false;
+		} else if (id.includes(" ")) {
+			alert("ID에 띄워쓰기를 사용하지 마세요")
+			return false;
+		} else if(id.length < 6 || id.length > 12) {
+			alert("ID는 6~12자리로 입력해주세요");
+			return false;
+		} else if(pw=="") {
+			alert("패스워드를 입력하세요");
+			return false;
+		} else if(pw.length < 6 || pw.length > 12) {
+			alert("패스워드는 6~12자리로 입력해주세요");
+			return false;
+		} else if(email=="") {
+			alert("EMAIL을 입력하세요");
+			return false;
+		} else if(email.length < 12) {
+			alert("EMAIL은 최소 12자리여야 합니다.");
+			return false;
+		} else if(!(email.includes("@") && email.includes("."))) {
+			alert("EMAIL 형식이 알맞지 않습니다.(@, . 확인해주세요)");
+			return false;
+		} else if(phone.length != 11 && phone.length != 13) {
+			alert("전화번호를 11자리 또는 13자리('-'포함)로 입력해주세요");
+			return false;
+		}  else if(phone.length==13) {
+			if (phone.charAt(3)!="-" && phone.charAt(7)!="-") {
+				alert("'-'를 입력하세요");
+				return false;
+			}
+		}
+		
+		return true;
+	}
+
+
+
+</script>
+</head>
+<body>
+<!-- /* length, charAt, includes 만 사용해서 만들어볼 것 */
+		id.charAt(); /* 보통 전화번호에서 - 가 들어오는지 확인 */
+		아이디 - 빈칸X, 자릿수 6~12자리, 띄워쓰기 X
+		PW - 빈칸X, 자릿수 6~12자리
+		EMAIL - 빈칸X, 최소 12글자 이상, @와 .이 들어갈 것
+		전화번호 - 13자리 or 11자리 무적권,  13자리라면 -(대쉬)가 반드시 2번 들어갈 것(4,9)번째
+ -->		
+	
+	<form action="signUp" onsubmit="return check()" class="login-form">
+		
+		ID:<input type="text" name="id" id="myId"><br>
+		PW:<input type="text" name="pw" id="myPw"><br>
+		E-MAIL:<input type="text" name="email" id="myEmail"><br>
+		PHONE:<input type="text" name="phone" id="myPhone"><br><br>
+		<input type="submit" value="회원가입하기"><br>
+	
+	</form>
+	
+	
+
+
+</body>
+</html>

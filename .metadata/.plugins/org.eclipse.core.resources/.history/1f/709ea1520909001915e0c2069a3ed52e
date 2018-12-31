@@ -1,0 +1,11 @@
+package DAO;
+
+public class MemberDAO {
+	
+	private SqlSessionFactory fac = MybatisConfig.getSqlSessionFactory(); 
+	
+	public int signUp(Member mem) {
+		
+	}
+	
+}
